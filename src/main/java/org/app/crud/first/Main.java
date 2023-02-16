@@ -2,6 +2,7 @@ package org.app.crud.first;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DbFunctions db = new DbFunctions();
+        db.connect_to_db();
     }
 }
