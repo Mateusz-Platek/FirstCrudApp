@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="276785f1-eed9-4552-bd40-ab3f13be0142" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/crud/first/DbFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/DbFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/app/crud/first/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <updated>1676565598882</updated>
       <workItem from="1676565600927" duration="5899000" />
       <workItem from="1676628108630" duration="189000" />
-      <workItem from="1676628372969" duration="8056000" />
+      <workItem from="1676628372969" duration="9115000" />
     </task>
     <servers />
   </component>
