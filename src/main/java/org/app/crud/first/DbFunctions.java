@@ -1,9 +1,6 @@
 package org.app.crud.first;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DbFunctions {
     public static Connection connect_to_db() {
@@ -43,6 +40,36 @@ public class DbFunctions {
             statement = conn.createStatement();
             statement.executeUpdate(query);
             System.out.println("Row inserted");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void read_data(Connection conn) {
+        Statement statement;
+        ResultSet resultSet = null;
+        try {
+            statement = conn.createStatement();
+            resultSet = statement.executeQuery("SELECT * FROM employees;");
+            while (resultSet.next()) {
+                System.out.print(resultSet.getString("emp_id") + " ");
+                System.out.print(resultSet.getString("name") + " ");
+                System.out.println(resultSet.getString("address"));
+            }
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void update_name(Connection conn, String oldName, String newName) {
+        Statement statement;
+        String query = String.format("UPDATE employees SET name='%s' WHERE name='%s';", newName, oldName);
+        try {
+            statement = conn.createStatement();
+            statement.executeUpdate(query);
+            System.out.println("Data updated");
         }
         catch (SQLException exception) {
             exception.printStackTrace();
