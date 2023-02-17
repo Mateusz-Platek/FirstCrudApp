@@ -75,4 +75,78 @@ public class DbFunctions {
             exception.printStackTrace();
         }
     }
+
+    public static void search_by_name(Connection conn, String name) {
+        Statement statement;
+        ResultSet resultSet = null;
+        String query = String.format("SELECT * FROM employees WHERE name='%s'", name);
+        try {
+            statement = conn.createStatement();
+            resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                System.out.print(resultSet.getString("emp_id") + " ");
+                System.out.print(resultSet.getString("name") + " ");
+                System.out.println(resultSet.getString("address"));
+            }
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void search_by_id(Connection conn, Integer emp_id) {
+        Statement statement;
+        ResultSet resultSet = null;
+        String query = String.format("SELECT * FROM employees WHERE emp_id=%d", emp_id);
+        try {
+            statement = conn.createStatement();
+            resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                System.out.print(resultSet.getString("emp_id") + " ");
+                System.out.print(resultSet.getString("name") + " ");
+                System.out.println(resultSet.getString("address"));
+            }
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void delete_by_name(Connection conn, String name) {
+        Statement statement;
+        String query = String.format("DELETE FROM employees WHERE name='%s'", name);
+        try {
+            statement = conn.createStatement();
+            statement.executeUpdate(query);
+            System.out.println("Data deleted");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void delete_by_id(Connection conn, Integer emp_id) {
+        Statement statement;
+        String query = String.format("DELETE FROM employees WHERE emp_id=%d", emp_id);
+        try {
+            statement = conn.createStatement();
+            statement.executeUpdate(query);
+            System.out.println("Data deleted");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public static void delete_table(Connection conn) {
+        Statement statement;
+        try {
+            statement = conn.createStatement();
+            statement.execute("DROP TABLE employees;");
+            System.out.println("Table deleted");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+    }
 }
