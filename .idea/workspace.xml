@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="276785f1-eed9-4552-bd40-ab3f13be0142" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/DbFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/app/crud/first/DbFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/DbFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/app/crud/first/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/app/crud/first/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +45,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/IdeaProjects/FirstCrudApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "SQL Dialects",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,6 +75,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="276785f1-eed9-4552-bd40-ab3f13be0142" name="Changes" comment="" />
@@ -81,11 +85,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676565598882</updated>
-      <workItem from="1676565600927" duration="5291000" />
+      <workItem from="1676565600927" duration="5899000" />
+      <workItem from="1676628108630" duration="189000" />
+      <workItem from="1676628372969" duration="4181000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
